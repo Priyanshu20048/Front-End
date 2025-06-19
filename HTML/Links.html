@@ -12,6 +12,17 @@
        <br>
       <a href = "www.google.com" target="_blank">Openig google on Blank </a>
       <!-- this target attribute is used to open link in a new tab -->
+       <!-- by deafualt target has _self value -->
+        <!-- target attribute has _parent , _top, framename values also 
+         these 3 attributes are used when there are iframes 
+         lets suppose there is an iframe inside an iframe1(parent frame)
+
+         1. framename :- if frame name is speccified then the page will open at this frame only i.e. changesreflect only in specifed frame 
+
+         2. _parent :- if the page is in iframe , then the page will open at parent frame  ie.e changes ta previous frame 
+
+         3. _top :- this means get out of the iframe i.e. changes reflect on the main Window -->
+
 
       <br>
       <!-- linking a file of this same folder to this file -->
@@ -27,5 +38,9 @@
         <!-- Accessing file from previous folder-->
          <a href = "../Extra.html">Previous Folder File</a>
          <!-- two dots (..) ka mtlb ek folder picche aana -->
+
+         <!-- anchor tag treats Broswer internal URL vs fie path links differently i.e links have different colours , but you can control it by css  -->
+
+
 </body>
 </html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Target Attribute Demo</title>
+</head>
+<body>
+
+    <h1>Main Window (Top)</h1>
+
+    <!-- Parent Frame -->
+    <iframe name="parentFrame" width="500" height="400" srcdoc='
+        <h2>This is Parent Frame</h2>
+
+        <!-- Inner Frame inside Parent -->
+        <iframe name="innerFrame" width="400" height="300" srcdoc="
+            <h3>This is Inner Frame</h3>
+
+            <p>Now click below links and observe:</p>
+
+            <a href=https://www.google.com target=innerFrame>Open in Inner Frame (framename)</a><br><br>
+
+            <a href=https://www.google.com target=_parent>Open in Parent Frame (_parent)</a><br><br>
+
+            <a href=https://www.google.com target=_top>Open in Top Window (_top)</a><br><br>
+
+        "></iframe>
+    '></iframe>
+
+</body>
+</html>
