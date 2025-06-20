@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio Buttons</title>
+</head>
+<body>
+    <form>
+        <p> Select your gender </p> 
+        <label for ="male">Male</label>
+        <input type="radio" name="gender" id="male" value = "Male">
+
+        <!-- Here the name is used to make tis radio button slect only one option , if name not used you can select everyone , which is not right , in radio button there should be one answe only , if another one is selcted , it should deselct the first one -->
+
+        <!--value attribute is used when data is sent to backend -->
+        <label for ="female">Female</label>
+        <input type="radio" name="gender" id="female">
+
+        <label for ="Other"> Others </label>
+        <input type="radio" name="gender" id="Other">
+    </form>
+</body>
+</html>
