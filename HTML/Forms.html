@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h1> HTML Forms </h1>
+    <form action = "AfterSignUp.html" method ='get'>
+        <!-- Action attribute :- after submitting this form it will open the page mentioned in action  -->
+          
+         <!-- Method attribute :- get is an http verb, when you set the method as get then the dta added in form is send theough url to another
+           when method = "POST":- dta is ent through http header  --> 
+           <!-- When get is sued the data is visible in address bar but not i the case of get -->
+
+         <!-- %40 = @ -->
+         <!-- %20 = space-->
+        <label for = "UserName"> UserName : </label>
+        <!-- here in label tag , the for attribute is indicating to a specified id ,due to which when we click on written text username it will point to the input field having id same as that for -->
+         <!-- <label for & input id should have same vaue > -->
+        <input type = "text" id ="UserName" placholder = "Enter your name" required><!-- placeholder is used to show some data by default in the input box -->
+        <!-- required :- is used to make that input box compulsory to be filled , if not filled form will not get submit , id required not mentioned the form can be submitted even leaving the input box blank by default -->
+        <br><br>
+        <label for = "password">Password :-</label>
+        <input type = "password" id ="password">
+        <br><br>
+        <label for ="mail"> Email :-</label>
+        <input type = "email" id ="mail">
+        <input type = "Submit" value = "Sign In">
+        <!-- <In submit the data written in the value attribute will be visibe on the button > -->
+    </form>
+</body>
+</html>
